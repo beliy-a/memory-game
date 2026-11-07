@@ -1,0 +1,24 @@
+:root {
+  --bg-color: #f8f9fa;
+  --text-main: #212529;
+  --text-muted: #adb5bd;
+  --primary-color: #4dabf7;
+  --primary-color-hover: #3b97e3;
+  --card-bg: #ffffff;
+  --border-color: #dee2e6;
+
+  --primary-bg-soft: #f1f9ff;
+  --primary-bg-strong: #e7f5ff;
+  --hover-bg: #f1f3f5;
+
+
+  --overlay-bg: rgba(0, 0, 0, 0.4);
+
+  --font-family: 'Inter', sans-serif;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+
+  --transition: 0.3s ease;
+  --transition-flip: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
