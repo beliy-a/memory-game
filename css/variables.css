@@ -11,6 +11,10 @@
   --primary-bg-strong: #e7f5ff;
   --hover-bg: #f1f3f5;
 
+  --bg-gradient: linear-gradient(180deg, #f8f9fa 0%, #eef1f4 100%);
+  --card-front-gradient: linear-gradient(145deg, #e5e7eb 0%, #d1d5db 100%);
+  --card-symbol-color: #6b7280;
+
 
   --overlay-bg: rgba(0, 0, 0, 0.4);
 

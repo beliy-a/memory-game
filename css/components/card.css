@@ -31,7 +31,7 @@
 }
 
 .card__face--front {
-  background-color: var(--card-bg);
+  background: var(--card-front-gradient);
   color: var(--text-muted);
 }
 
@@ -48,7 +48,8 @@
 .card__face--front .card__symbol {
   font-size: 1.75rem;
   font-weight: 600;
-  opacity: 0.4;
+  opacity: 0.6;
+  color: var(--card-symbol-color);
 }
 
 .card:not(.is-flipped):not(.is-matched):hover .card__face--front {
