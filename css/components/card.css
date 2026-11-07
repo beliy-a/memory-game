@@ -1,0 +1,62 @@
+.card {
+  aspect-ratio: 1 / 1;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform var(--transition-flip);
+}
+
+.card.is-flipped .card__inner,
+.card.is-matched .card__inner {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  transition: border-color var(--transition), background-color var(--transition);
+  user-select: none;
+}
+
+.card__face--front {
+  background-color: var(--card-bg);
+  color: var(--text-muted);
+}
+
+.card__face--back {
+  background-color: var(--card-bg);
+  transform: rotateY(180deg);
+}
+
+.card__symbol {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.card__face--front .card__symbol {
+  font-size: 1.75rem;
+  font-weight: 600;
+  opacity: 0.4;
+}
+
+.card:not(.is-flipped):not(.is-matched):hover .card__face--front {
+  border-color: var(--primary-color);
+  background-color: var(--primary-bg-soft);
+}
+
+.card.is-matched .card__face--back {
+  border-color: var(--primary-color);
+  background-color: var(--primary-bg-strong);
+}
