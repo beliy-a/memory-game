@@ -18,6 +18,8 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background: var(--bg-gradient);
+  background-attachment: fixed;
 }
 
 img,
