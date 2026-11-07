@@ -61,3 +61,24 @@
   border-color: var(--primary-color);
   background-color: var(--primary-bg-strong);
 }
+
+
+@media (max-width: 768px) {
+  .card__symbol {
+    font-size: 2rem;
+  }
+
+  .card__face--front .card__symbol {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card__symbol {
+    font-size: 1.5rem;
+  }
+
+  .card__face--front .card__symbol {
+    font-size: 1.25rem;
+  }
+}

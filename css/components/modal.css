@@ -54,3 +54,26 @@
 body.no-scroll {
   overflow: hidden;
 }
+
+
+@media (max-width: 480px) {
+  .modal__content {
+    padding: 24px 20px;
+  }
+
+  .modal__title {
+    font-size: 1.25rem;
+  }
+
+  .modal__text {
+    margin-bottom: 16px;
+  }
+
+  .modal__actions {
+    flex-direction: column;
+  }
+
+  .modal__actions .btn {
+    width: 100%;
+  }
+}

@@ -30,3 +30,11 @@
   border-color: var(--text-muted);
   background-color: var(--hover-bg);
 }
+
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+}

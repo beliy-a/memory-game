@@ -13,3 +13,20 @@
   width: 100%;
   max-width: 600px;
 }
+
+
+@media (max-width: 768px) {
+  .main {
+    padding: 24px 16px;
+  }
+
+  .game-board {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-board {
+    gap: 8px;
+  }
+}
